@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment"
+    android:background="@color/white"
+    android:gravity="center">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ady"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:orientation="vertical"
+        app:boxStrokeColor="@color/color_primary"
+        app:boxStrokeWidth="1dp"
+        app:hintTextColor="@color/color_primary">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@color/black"
+        android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_surname"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Familiýasy"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:orientation="vertical"
+        app:boxStrokeColor="@color/color_primary"
+        app:boxStrokeWidth="1dp"
+        app:hintTextColor="@color/color_primary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@color/black"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_group"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Topary"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:orientation="vertical"
+        app:boxStrokeColor="@color/color_primary"
+        app:boxStrokeWidth="1dp"
+        app:hintTextColor="@color/color_primary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@color/black"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="Goşmak"
+        android:backgroundTint="@color/color_primary"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/white"
+        android:visibility="gone"/>
+</FrameLayout>
+    <com.google.android.material.button.MaterialButton
+       android:id="@+id/all_students"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+       android:layout_marginTop="10dp"
+        android:text="Ulanyjylar"
+       android:backgroundTint="@color/black"/>
+
+
+</LinearLayout>
